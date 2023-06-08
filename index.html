@@ -9,99 +9,107 @@
 <body>
 
   <div class="container mt-4">
-
-    <h1 class="text-center">Brew-QUATIONS</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="text-center">brew-QUATIONS</h1>
+      </div>
+    </div>
     
     <div class="row">
-      <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#co" aria-expanded="false" aria-controls="co">
-        CO2 Volume
-      </button>
-    </div>
-    <div class="collapse" id="co">
-      <div class="card card-body">
-        <h2 id="coResult">0</h2>
-        <form id="coForm">
-          <div class="form-group">
-            <label for="temp">Temperature:</label>
-            <input type="number" step="0.01" class="form-control" id="temp" placeholder="Enter Tempurature">
+        <div class="col-sm-12">
+        <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#co" aria-expanded="false" aria-controls="co">
+          CO2 Volume
+        </button>
+        <div class="collapse" id="co">
+          <div class="card card-body">
+            <h2 id="coResult">0</h2>
+            <form id="coForm">
+              <div class="form-group">
+                <label for="temp">Temperature:</label>
+                <input type="number" step="0.01" class="form-control" id="temp" placeholder="Enter Tempurature">
+              </div>
+              <div class="form-group">
+                <label for="equilibriumPsi">Equilibrium PSI:</label>
+                <input type="number" step="0.01" class="form-control" id="equilibriumPsi" placeholder="Enter Equilibrium PSI">
+              </div>
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="equilibriumPsi">Equilibrium PSI:</label>
-            <input type="number" step="0.01" class="form-control" id="equilibriumPsi" placeholder="Enter Equilibrium PSI">
-          </div>
-          <button type="submit" class="btn btn-primary">Calculate</button>
-        </form>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#abv" aria-expanded="false" aria-controls="abv">
-        ABV
-      </button>
-    </div>
-    <div class="collapse" id="abv">
-      <div class="card card-body">
-        <h2 id="abvResult">0.00%</h2>
-        <form id="abvForm">
-          <div class="form-group">
-            <label for="og">Original Gravity:</label>
-            <input type="number" step="0.001" class="form-control" id="og" placeholder="Enter Original Gravity">
+      <div class="col-sm-12">
+        <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#abv" aria-expanded="false" aria-controls="abv">
+          ABV
+        </button>
+        <div class="collapse" id="abv">
+          <div class="card card-body">
+            <h2 id="abvResult">0.00%</h2>
+            <form id="abvForm">
+              <div class="form-group">
+                <label for="og">Original Gravity:</label>
+                <input type="number" step="0.001" class="form-control" id="og" placeholder="Enter Original Gravity">
+              </div>
+              <div class="form-group">
+                <label for="fg">Final Gravity:</label>
+                <input type="number" step="0.001" class="form-control" id="fg" placeholder="Enter Final Gravity">
+              </div>
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="fg">Final Gravity:</label>
-            <input type="number" step="0.001" class="form-control" id="fg" placeholder="Enter Final Gravity">
-          </div>
-          <button type="submit" class="btn btn-primary">Calculate</button>
-        </form>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#topUp" aria-expanded="false" aria-controls="topUp">
-        Top Up
-      </button>
-    </div>
-    <div class="collapse" id="topUp">
-      <div class="card card-body">
-        <h2 id="topUpResult"></h2>
-        <form id="topUpForm">
-          <div class="form-group">
-            <label for="bbl">BBL:</label>
-            <input type="number" step="0.01" class="form-control" id="bbl" placeholder="Enter BBL">
+      <div class="col-sm-12">
+        <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#topUp" aria-expanded="false" aria-controls="topUp">
+          Top Up
+        </button>
+        <div class="collapse" id="topUp">
+          <div class="card card-body">
+            <h2 id="topUpResult"></h2>
+            <form id="topUpForm">
+              <div class="form-group">
+                <label for="bbl">BBL:</label>
+                <input type="number" step="0.01" class="form-control" id="bbl" placeholder="Enter BBL">
+              </div>
+              <div class="form-group">
+                <label for="kettle_grav">Kettle Gravity:</label>
+                <input type="number" step="0.01" class="form-control" id="kettle_grav" placeholder="Enter Kettle Gravity">
+              </div>
+              <div class="form-group">
+                <label for="target_grav">Target Gravity:</label>
+                <input type="number" step="0.01" class="form-control" id="target_grav" placeholder="Enter Target Gravity">
+              </div>
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="kettle_grav">Kettle Gravity:</label>
-            <input type="number" step="0.01" class="form-control" id="kettle_grav" placeholder="Enter Kettle Gravity">
-          </div>
-          <div class="form-group">
-            <label for="target_grav">Target Gravity:</label>
-            <input type="number" step="0.01" class="form-control" id="target_grav" placeholder="Enter Target Gravity">
-          </div>
-          <button type="submit" class="btn btn-primary">Calculate</button>
-        </form>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#sg" aria-expanded="false" aria-controls="sg">
-        SG
-      </button>
-    </div>
-    <div class="collapse" id="sg">
-      <div class="card card-body">
-        <h2 id="sgResult">0</h2>
-        <form id="sgForm">
-          <div class="form-group">
-            <label for="plato">Plato:</label>
-            <input type="text" class="form-control" id="plato" placeholder="Enter Plato">
+      <div class="col-sm-12">
+        <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#sg" aria-expanded="false" aria-controls="sg">
+          SG
+        </button>
+        <div class="collapse" id="sg">
+          <div class="card card-body">
+            <h2 id="sgResult">0</h2>
+            <form id="sgForm">
+              <div class="form-group">
+                <label for="plato">Plato:</label>
+                <input type="text" class="form-control" id="plato" placeholder="Enter Plato">
+              </div>
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
           </div>
-          <button type="submit" class="btn btn-primary">Calculate</button>
-        </form>
+        </div>
       </div>
     </div>
-
-   
-
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
